@@ -9,6 +9,8 @@ app.use("/", require(path.join(__dirname, "routes/blog.js")));
 
 app.get("/", (req, res) => {
   const userData = 45;
+  console.log("Hello");
+  console.log(userData);
   return userData;
 });
 

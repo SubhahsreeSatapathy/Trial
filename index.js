@@ -8,7 +8,10 @@ app.use(express.static(path.join(__dirname, "static")));
 app.use("/", require(path.join(__dirname, "routes/blog.js")));
 
 app.get("/", (req, res) => {
-  return 45;
+  const userData = 45;
+  console.log("Hello");
+  console.log(userData);
+  return userData;
 });
 
 app.listen(port, () => {

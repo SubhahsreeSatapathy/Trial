@@ -13,7 +13,9 @@ app.get("/", (req, res) => {
   console.log(userData);
   return userData;
 });
-
+app.get("/data",(req,res)=>{
+ res.send("Hello");
+});
 app.listen(port, () => {
   console.log(`blog app listening at http://localhost:${port}`);
 });
